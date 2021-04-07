@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<network-security-config>
+	<domain-config cleartextTrafficPermitted="true">
+		<!-- Debug port  -->
+		<!--192.168.52.08 for example please add like this-->
+		<domain includeSubdomains="true">192.000.00.00</domain>
+	</domain-config>
+</network-security-config>
+

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterviewFalaina.MainPage">
+
+    <StackLayout x:Name="mainStack"
+                 Margin="20"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand" >
+        
+        <Frame  BackgroundColor="#2196F3" 
+                Padding="24" 
+                CornerRadius="0">
+            <Label Text="Falaina Interview Task - Round 1" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+
+        <Label x:Name="lblTitle" 
+               Text="Notification Title" 
+               FontSize="Small"
+               FontAttributes="Italic"
+               Margin="0,25,0,0"/>
+        <Entry x:Name="entryTitle" 
+               FontSize="Medium" />
+        <Label x:Name="lblbody" 
+               Text="Notification Body" 
+               FontAttributes="Italic"
+               FontSize="Small"/>
+        <Entry x:Name="entryBody" 
+               FontSize="Medium" />
+
+        <Button Text="SendtoFCM" 
+                x:Name="btnSend1"
+                CornerRadius="8"
+                Margin="0,15"
+                BorderColor="Red" 
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                Padding="0"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="btnSend_Clicked"/>
+        
+        <Button Text="SendtoWebAPI" 
+                x:Name="btnSend2"
+                CornerRadius="8"
+                Margin="0,15"
+                BorderColor="Red" 
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                Padding="0" IsEnabled="False"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="btnSend2_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
