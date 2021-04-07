@@ -7,7 +7,8 @@ namespace InterviewFalaina.Configuration
     public class GlobalConfig
     {
         /// <summary>
-        ///  API Key 
+        ///  API Key ---> Dummy Api Key
+		/// The key in APIKEY notepad file
         /// </summary>
         public static string Key = "SIlxmrHVN0P7u2tEoMKrsnnlA7Ed4c4tg_i0Png1SCDmANxlE-j3kCdXuWDOKb6tkyOIHUpErRZ";
 
